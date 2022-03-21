@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "back-office": "apps/back-office",
+    "back-office-e2e": "apps/back-office-e2e"
+  }
+}
