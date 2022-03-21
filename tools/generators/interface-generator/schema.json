@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "interface-generator",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Library name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "location": {
+      "type": "string",
+      "description": "Provide the library type",
+      "x-prompt": {
+        "message": "Is this a Global or Local interface?",
+        "type": "list",
+        "items": [
+          {
+            "value": "global",
+            "label": "Global"
+          },
+          {
+            "value": "local",
+            "label": "Local"
+          }
+        ]
+      }
+    },
+    "isDto": {
+      "type": "boolean",
+      "default": false,
+      "x-prompt": {
+        "message": "Do you want it to be a DtoObject?",
+        "type": "confirmation"
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

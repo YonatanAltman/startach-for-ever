@@ -1,0 +1,4 @@
+<%- importFrom %>
+export interface <%= className %> <%= _extends %>{
+  [key:string]:any;
+}

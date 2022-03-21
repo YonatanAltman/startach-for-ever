@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@global/interfaces": ["libs/api-interfaces/src/index.ts"],
       "@startach-for-ever/api-interfaces": ["libs/api-interfaces/src/index.ts"]
     }
   },
