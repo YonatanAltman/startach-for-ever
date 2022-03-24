@@ -41,5 +41,8 @@
   },
   "required": [
     "name"
-  ]
+  ],
+  "scripts": {
+    "start": "nx workspace-generator interface-generator employee"
+  }
 }

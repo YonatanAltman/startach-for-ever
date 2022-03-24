@@ -1,0 +1,11 @@
+{
+  "name": "interface-generator",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "run": "nx workspace-generator interface-generator employee"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {}
+}
