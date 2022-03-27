@@ -1,5 +1,6 @@
 import {formatFiles, generateFiles, joinPathFragments, logger, names, Tree} from '@nrwl/devkit';
 import {readFileIfExisting} from "@nrwl/workspace/src/core/file-utils";
+import {getCurrentLocation} from "../utils/tools.utiles";
 
 export interface InterfaceGeneratorOptions {
   name: string;
@@ -49,7 +50,3 @@ export default async function (tree: Tree, options: InterfaceGeneratorOptions) {
 
 }
 
-
-function getCurrentLocation(root:string): string {
-  return process.cwd().replace(root+'/','');
-}
