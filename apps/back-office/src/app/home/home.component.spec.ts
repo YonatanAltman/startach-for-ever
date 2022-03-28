@@ -21,19 +21,4 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   })
-  xdescribe('ngOnInit', () => {
-    it('should call ngOnInit with correct value', () => {
-      const spy = jest.spyOn(component, 'ngOnInit');
-      component.ngOnInit();
-      expect(spy).toHaveBeenCalled();
-    });
-  })
-  describe('getHomeAddress', () => {
-    it('should call getHomeAddress with correct value', () => {
-      const spy = jest.spyOn(component, 'getHomeAddress');
-      component.getHomeAddress();
-      expect(spy).toHaveBeenCalled();
-    });
-  })
-
 });

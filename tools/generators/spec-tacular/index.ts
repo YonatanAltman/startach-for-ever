@@ -49,7 +49,7 @@ export default async function (tree: Tree, options: any) {
       const ast = tsquery.ast(componentSpec);
       const nodes = tsquery(ast, `ArrowFunction`);
       const firstNode = head(nodes);
-      const position = firstNode.end - 3;
+      const position = firstNode.end - 2;
       componentSpec = [componentSpec.slice(0, position), test, componentSpec.slice(position)].join('');
       tree.write(componentSpecPath, componentSpec);
       logger.info(`${count} has been updated at ${componentName}.component.spec.ts`)

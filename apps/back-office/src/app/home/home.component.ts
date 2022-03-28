@@ -22,19 +22,25 @@ export class HomeComponent implements OnInit {
   constructor(private homeService: HomeService) {
   }
 
+  // 🧗️need test
   ngOnInit() {
+    this.userName = 'yonatan';
     this.generateData();
+    this.homeService.get(this.userName);
   }
 
+  // 🧗️need test
   public getHomeAddress(): void {
     ++this.count;
     this.address = `Rothschild boulevard ${this.count}`;
   }
 
+  // 🧗️need test
   public constructorHome(text: string): string {
     return text
   }
 
+  // ⛔️ private doesn't need test
   private generateData() {
     this.count = 0;
   }
